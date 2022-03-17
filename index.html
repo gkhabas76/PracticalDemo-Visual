@@ -16,6 +16,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
+    <!-- Swiper JS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
 </head>
 <body>
 
@@ -249,10 +251,10 @@
     <!--=========== end of FAQ  ===========-->
 
 
-    <section class="container testimonials_container">
+    <section class="container testimonials_container mySwiper">
         <h2>Student Testimonials</h2>
-        <div>
-            <article class="testimonial">
+        <div class="swiper-wrapper">
+            <article class="testimonial swiper-slide">
                 <div class="avatar">
                     <img src="./images/avatar1.jpg" alt="">
                 </div>
@@ -265,9 +267,147 @@
                     </p>
                 </div>
             </article>
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./images/avatar2.jpg" alt="">
+                </div>
+                <div class="testimonial_info">
+                    <h5>Ernest </h5><small>Web Developer</small>
+                </div>
+                <div class="testimonial_body">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure tempore facere magni quae labore corrupti!
+                    </p>
+                </div>
+            </article>
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./images/avatar3.jpg" alt="">
+                </div>
+                <div class="testimonial_info">
+                    <h5>Edam </h5><small>Student</small>
+                </div>
+                <div class="testimonial_body">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure tempore facere magni quae labore corrupti!
+                    </p>
+                </div>
+            </article>
+            
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./images/avatar4.jpg" alt="">
+                </div>
+                <div class="testimonial_info">
+                    <h5>Anna</h5><small>Student</small>
+                </div>
+                <div class="testimonial_body">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure tempore facere magni quae labore corrupti!
+                    </p>
+                </div>
+            </article>
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./images/avatar5.jpg" alt="">
+                </div>
+                <div class="testimonial_info">
+                    <h5>Jane</h5><small>Student</small>
+                </div>
+                <div class="testimonial_body">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure tempore facere magni quae labore corrupti!
+                    </p>
+                </div>
+            </article>
+
         </div> 
+        <div class="swiper-pagination"></div>
     </section>
 
+
+    <!--=========== end of Testimonials  ===========-->
+
+    <footer>
+        <div class="container footer_container">
+            <div class="footer_1">
+                <a href="index.html" class="footer_logo"><h4>E-CENTER</h4></a>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, facere.
+                </p>
+            </div>
+
+            <div class="footer_2">
+                <h4>Permalinks</h4>
+                <ul class="permalinks">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer_3">
+                <h4>Privacy</h4>
+                <ul class="Privacy">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms and conditions</a></li>
+                    <li><a href="#">Refund Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer_4">
+                <h4>Contact US</h4>
+                <div>
+                    <p>+49-01-12345678</p>
+                    <p>abc@mail.com</p>
+                </div>
+
+                <!-- <ul class="footer_socials">
+                    <li>
+                        <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                    </li>
+                </ul> -->
+            </div>
+
+        </div>
+
+        <div class="footer_copyright">
+            <small>Copyright &copy; E-Center</small>
+        </div>
+    </footer>
+
+
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 <script src="./main.js"></script>
+
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        //when width is >= 600px
+        breakpoints: {
+            600: {
+                slidesPerView: 2
+            }
+        }
+    });
+</script>
 </body>
 </html>
