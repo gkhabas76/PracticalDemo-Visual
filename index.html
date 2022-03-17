@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Website Using HTML, CSS and JavaScript</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- FontAwesome  link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google font(montserrat)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <nav>
+        <div class="container nav_container">
+            <a href="index.html"><h4>E-CENTER</h4></a>
+            <ul class="nav_menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button id="open-menu-btn"><i class="fa-solid fa-bars"></i></button>
+            <button id="close-menu-btn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+    </nav>
+
+    <!--=========== end of NavBar  ===========-->
+
+    <header>
+        <div class="container header_container">
+            <div class="header_left">
+                <h1>Grow your skills to advance your career path</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                     
+                </p>
+                <a href="courses.html" class="btn btn-primary">Get Started</a>
+            </div>
+            <div class="header_right">
+                <div class="header_right-image">
+                    <img src="./images/header.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--=========== end of Header  ===========-->
+
+    <section class="categories">
+        <div class="container categories_container">
+
+            <div class="categories_left">
+                    <article class="category">
+                        <span class="category_icon"><i class="fa-brands fa-bitcoin"></i></span>
+                            <h5>Blockchain</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>  
+                    </article>
+
+                    <article class="category">
+                        <span class="category_icon"><i class="fa-solid fa-bezier-curve"></i></span>
+                            <h5>Graphic Design</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>  
+                    </article>
+
+                    <article class="category">
+                        <span class="category_icon"><i class="fa-solid fa-coins"></i></span>
+                            <h5>Finance</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>  
+                    </article>
+
+                    <article class="category">
+                        <span class="category_icon"><i class="fa-solid fa-bullhorn"></i></span>
+                            <h5>Marketing</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>  
+                    </article>
+
+                    <article class="category">
+                        <span class="category_icon"><i class="fa-solid fa-briefcase"></i></span>
+                            <h5>Business</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>  
+                    </article>
+
+                    <article class="category">
+                        <span class="category_icon"><<i class="fa-solid fa-music"></i></span>
+                            <h5>Music</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>  
+                    </article>
+
+            </div>
+
+            <div class="categories_right">
+                <h1>Categories</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                     
+                </p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!--=========== end of Categories  ===========-->
+
+
+
+    <section class="courses">
+        <h2>Our Popular Courses</h2>
+        <container class="courses_container"></container>
+    </section>   
+<script src="./main.js"></script>
+</body>
+</html>
