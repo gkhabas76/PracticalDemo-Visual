@@ -1,2 +1,1 @@
-# E-Center
-Education Website using HTML, CSS and JavaScript.
+This website is used for practical purpose of the study.
