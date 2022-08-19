@@ -89,12 +89,12 @@ input, textarea {
 
 /* ============  Media Queries (tablets)  ==================== */
 
-@media screen and (max-width:1024px) {
+/* @media screen and (max-width:1024px) {
     .contact {
         /* padding-bottom: 0; */
-    }
+    } */
 
-    .contact_container {
+    /* .contact_container {
         gap: 1.5rem;
         margin-top: 3rem;
         height: auto;
@@ -111,11 +111,11 @@ input, textarea {
         align-self: center;
         margin-right: 1.5rem;
     }
-}
+} */
 
 /* ============  Media Queries (Phones)  ==================== */
 
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
     .contact_container {
         grid-template-columns: 1fr;
         gap: 3rem;
@@ -133,4 +133,4 @@ input, textarea {
     .form_name input[type="text"]{
         width: 100%;
     }
-}
+} */
